@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tp php form</title>
+    <style>
+      body 
+    {
+        padding: 20px;
+    }
+  
+    form 
+    {
+        width: 650px;
+        background-color: white;
+        padding: 15px;
+        border: 1px solid #000000;
+    }
+    #loi
+    {
+        padding: 10px;
+        border: 1px solid black;
+    }
+    button 
+    {
+        padding: 1px 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <p>
+        <form method="post" action="nisrine_version.php" enctype="multipart/form-data">
+            <label class="title">Votre Nom d'Utilisateur </label>&emsp;&emsp;&emsp;
+            <label>
+                <input type="text" name="username" required>
+            </label>
+            <br><br>
+
+            <label class="title">Votre Mot de Passe</label>&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label> 
+                <input type="password" name="password" required>
+            </label>
+            <br><br>
+
+            <label class="title">Votre Profession</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label> 
+                <select id="optionsprofession" name="optionsprofession[]" multiple>
+                    <option value="option1">Agent immobilier</option>
+                    <option value="option2">Architecte</option>
+                </select>
+            </label>
+            <br><br>
+
+            <label class="title">Votre Pays</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label> 
+                <select id="optionspays" name="optionspays[]" multiple required>
+                    <option value="choix1">choix1</option>
+                    <option value="choix2">choix2</option>
+                </select>
+            </label>
+            <br><br>
+
+            <label class="title">Votre Sexe</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label> 
+                <label>
+                    <input type="radio" name="gender" value="Male" required>M
+                </label>  
+                <label>
+                    <input type="radio" name="gender" value="Female">F
+                </label>
+            </label>
+            <br><br>
+
+            <label class="title">Votre Langue</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label> 
+                <select id="optionslangue" name="optionslangue[]" multiple required>
+                    <option value="francais">Français</option>
+                    <option value="arabe">Arabe</option>
+                    <option value="anglais">Anglais</option>
+                </select>
+            </label>
+            <br><br>
+
+            <label class="title">Votre Loisir</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label id="loi">
+                <label>
+                    <input type="checkbox" name="loisir[]" value="Sport">Sport
+                </label>  
+                <label>
+                    <input type="checkbox" name="loisir[]" value="Music">Music
+                </label>  
+                <label>
+                    <input type="checkbox" name="loisir[]" value="Internet">Internet
+                </label>  
+                <label>
+                    <input type="checkbox" name="loisir[]" value="Voyage">Voyage
+                </label>  
+                <label>
+                    <input type="checkbox" name="loisir[]" value="Lecture">Lecture
+                </label>  
+                <label>
+                    <input type="checkbox" name="loisir[]" value="Recherche">Recherche
+                </label>
+            </label>
+            <br><br>
+
+            <label class="title">Votre CV (en PDF)</label>&emsp;&emsp;&emsp;&emsp;
+            <label> 
+                <input type="file" name="cv" id="cvpdf" accept=".pdf" required>
+            </label>
+            <br><br>
+            
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="reset" value="Vider"> <input type="submit" value="Valider">  <button type="button" onclick="">Rétablir</button>
+        </form>
+    </p>
+</body>
+</html>

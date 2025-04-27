@@ -1,0 +1,10 @@
+Issue : if the size of a file is greater than the upload_max_filesize = 4M
+some problemes occurs
+
+problem with AlOssol file
+
+Note : the path of the file must be between simple quotes 
+$result = move_uploaded_file($_FILES['cv']['tmp_name'],'C:\wamp64\www\Tp1\tp1_CVs\uploadedCV_'.date("Y_M_D__H-i-s").".pdf");
+
+other Problem : 
+$destination = "C:\wamp64\www\Tp1\tp1_CVs\\"; error because \t mine tabulation 
