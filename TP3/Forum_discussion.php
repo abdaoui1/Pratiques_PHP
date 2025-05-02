@@ -86,12 +86,13 @@
     include_once "Info_Discussion.php";
     // 1) Recuperation des donnees saisies
      // <!-- Verifie that the form is well received  -->
-        if ( sizeof($_POST) == 0 )  // isset($_POST) it's a bad verification here
+        if ( sizeof($_POST) == 0 )  // Or isset($_POST)
         {
             // echo "<h1> Le formulaire n'est pas recu </h1>";
             //exit(); // ahhh , after 30m of debugging finaly i understand that i must not use exit();
             // because the server exit the script then the code below the script php wont be send to the browser.
         }   
+        
     else 
 
     {

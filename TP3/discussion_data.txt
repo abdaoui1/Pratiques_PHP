@@ -40,3 +40,6 @@ Enregistrement: [nom=Arbi | prenom=abdaoui | email=dfaffa@gmil.com | paye=Mexico
 Enregistrement: [nom=Arbi | prenom=abdaoui | email=dfaffa@gmil.com | paye=Mexico | ville=a Inserer | message=Hello , i am happy today | date=26/04/2025 , 21:54:25 | path=Error file | file_name=Error file | file_size=Error file ];
 
 
+Enregistrement: [nom=hiba | prenom=saida | email=aisais@gmial.com | paye=Algeria | ville=a Inserer | message=hey , i feel good to day | date=27/04/2025 , 22:53:33 | path=Error file | file_name=Error file | file_size=Error file ];
+
+
