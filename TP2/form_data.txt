@@ -1,27 +1,6 @@
-Form_data [nom=Omar | prenom=abdaoui | password=33 | profession=menouisier | paye=Mexico | sexe=Masculin | langues=Arabe ,Anglais | loisirs=Recherche ,Music | cv_nom=uploadedCV_2025_Apr_Sat__06-51-01.pdf | cv_taille=574Ko | cv_location=C:\wamp64\www\Tp1\tp1_CVs\uploadedCV_2025_Apr_Sat__06-51-01.pdf]
+Form_data [nom=Taki | prenom=jaouad | password=1234 | profession=Coiffeur | paye=Afghanistan | ville=‘Alāqahdārī Dīshū | sexe=Masculin | langues=Arabe | loisirs=Sport | cv_nom=uploadedCV_2025_May_Thu__23-52-14.pdf | cv_taille=574Ko | cv_location=C:\wamp64\www\TPS\TP2\tp2_CVs\uploadedCV_2025_May_Thu__23-52-14.pdf]
 
 
-Form_data [nom=Omar | prenom=abdaoui | password=33 | profession=menouisier | paye=Mexico | sexe=Masculin | langues=Arabe ,Anglais | loisirs=Recherche ,Music | cv_nom=uploadedCV_2025_Apr_Sat__07-10-50.pdf | cv_taille=574Ko | cv_location=C:\wamp64\www\Tp1\tp1_CVs\uploadedCV_2025_Apr_Sat__07-10-50.pdf]
-
-
-Form_data [nom=Mohamed | prenom=abdaoui | password=33 | profession=menouisier | paye=Mexico | sexe=Masculin | langues=Arabe ,Anglais | loisirs=Recherche ,Music | cv_nom=uploadedCV_2025_Apr_Sat__07-12-16.pdf | cv_taille=574Ko | cv_location=C:\wamp64\www\Tp1\tp1_CVs\uploadedCV_2025_Apr_Sat__07-12-16.pdf]
-
-
-Form_data [nom=Mohamed | prenom=abdaoui | password=33 | profession=menouisier | paye=Mexico | sexe=Masculin | langues=Arabe ,Anglais | loisirs=Recherche ,Music | cv_nom=uploadedCV_2025_Apr_Sat__07-19-29.pdf | cv_taille=574Ko | cv_location=C:\wamp64\www\Tp1\tp1_CVs\uploadedCV_2025_Apr_Sat__07-19-29.pdf]
-
-
-Form_data [nom=Arbi | prenom=abdaoui | password=33 | profession=menouisier | paye=Mexico | sexe=Masculin | langues=Arabe ,Anglais | loisirs=Recherche ,Music | cv_nom=uploadedCV_2025_Apr_Sat__07-22-47.pdf | cv_taille=574Ko | cv_location=C:\wamp64\www\Tp1\tp1_CVs\uploadedCV_2025_Apr_Sat__07-22-47.pdf]
-
-
-Form_data [nom=Abdaoui | prenom=Abdessamad | password=13 | profession=menouisier | paye=Morocco | sexe=NON choisi | langues=NON choisi | loisirs=NON choisi | cv_nom=Erreur _ fichier | cv_taille=Erreur _ fichier | cv_location=Erreur _ fichier]
-
-
-Form_data [nom=Abdaoui | prenom=Abdessamad | password=13 | profession=menouisier | paye=Morocco | sexe=Masculin | langues=Arabe | loisirs=NON choisi | cv_nom=uploadedCV_2025_Apr_Sat__12-20-37.pdf | cv_taille=574Ko | cv_location=C:\wamp64\www\Tp1\tp1_CVs\uploadedCV_2025_Apr_Sat__12-20-37.pdf]
-
-
-Form_data [nom=Abdaoui | prenom=Abdessamad | password=13 | profession=menouisier | paye=Morocco | sexe=Masculin | langues=Arabe | loisirs=NON choisi | cv_nom=uploadedCV_2025_Apr_Sat__12-29-13.pdf | cv_taille=574Ko | cv_location=C:\wamp64\www\Tp1\tp1_CVs\uploadedCV_2025_Apr_Sat__12-29-13.pdf]
-
-
-Form_data [nom=Abdaoui | prenom=Abdessamad | password=13 | profession=menouisier | paye=Morocco | sexe=NON choisi | langues=NON choisi | loisirs=NON choisi | cv_nom=Erreur _ fichier | cv_taille=Erreur _ fichier | cv_location=Erreur _ fichier]
+Form_data [nom=Taki | prenom=jaouad | password=45 | profession=Coiffeur | paye=Albania | ville=Bajram Curri | sexe=Masculin | langues=Arabe | loisirs=Sport | cv_nom=uploadedCV_2025_May_Thu__23-55-24.pdf | cv_taille=574Ko | cv_location=C:\wamp64\www\TPS\TP2\tp2_CVs\uploadedCV_2025_May_Thu__23-55-24.pdf]
 
 

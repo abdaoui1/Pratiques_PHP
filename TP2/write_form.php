@@ -17,6 +17,18 @@ crossorigin="anonymous"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enregistre le formulaire</title>
+
+    <style>
+        a {
+            border-radius: 5px;
+            background-color: skyblue;
+            margin: 20px;
+            padding: 5px;
+            font-size: 20px;
+
+            
+        }
+    </style>
 </head>
 <body>
     <?php
@@ -42,6 +54,7 @@ crossorigin="anonymous"/>
                 htmlspecialchars($_POST["pwd"]),
                 $_POST['profession'],
                 $_POST["pays"] ,
+                $_POST['ville'],
                 isset( $_POST['sexe'] )? $_POST['sexe'] :'NON choisi',
                 isset( $_POST["langue"] ) ? $_POST["langue"] :['NON choisi'], // because i use implode in the Form_data
                 isset( $_POST['loisirs'] ) ? $_POST['loisirs'] :['NON choisi'], // and form attend array not a string
@@ -58,13 +71,13 @@ crossorigin="anonymous"/>
         else {
             $extension = pathinfo($_FILES["cv"]["name"],PATHINFO_EXTENSION);
             if ( $extension != 'pdf') {
-                echo "<h1>le fichier n'est pas un pdf </h1>";
+                echo "le fichier n'est pas un pdf ";
             }
             elseif ($_FILES["cv"]["size"] > 4*1024*1024 ) {
-                echo "<h1>le fichier depasse 4Mo </h1>";
+                echo "le fichier depasse 4Mo ";
             }
             else {
-                $destination = "C:\wamp64\www\Tp1\\tp1_CVs\\";  // two '\' to avoid interpretation like a tabulation
+                $destination = "C:\wamp64\www\TPS\TP2\\tp2_CVs\\";  // two '\' to avoid interpretation like a tabulation
                 $file_name   = 'uploadedCV_'.date("Y_M_D__H-i-s").".pdf" ;
                 if (  !move_uploaded_file($_FILES['cv']['tmp_name'], $destination.$file_name) )
                 { echo "error while uploding file " ; }
@@ -78,37 +91,26 @@ crossorigin="anonymous"/>
             }
         }
         
-        echo "<h3>".$result->__toString()."</h3>";
+        echo "<h3> Tout est bien </br> donnees recu : \t ".$result->__toString()."</h3>";
 
 
         // -------------------------------------------- Write data in a file --------------------------------------------
         // Opening the file 
-        $fp = fopen('C:\wamp64\www\Tp1\TP2\form_data.txt' , 'a' );  // 'a' : write in the end of the file
+        $fp = fopen('C:\wamp64\www\TPS\TP2\form_data.txt' , 'a' );  // 'a' : write in the end of the file
         if ( !$fp) echo "<h1> Error while Opening file </h1>";
+        else {
 
-        fwrite( $fp  , $result->__toString()."\n\n\n");
+            fwrite( $fp  , $result->__toString()."\n\n\n");
 
-        // Closing the file 
-        fclose($fp);
-
-        // test  : Get Object  from the file : 
-        // first find a function to extract str between two char .
-
-        //  second search how to import a class ( Done the name of the class is Form_data.php)
-       
+            // Closing the file 
+            fclose($fp);
+        }
         ?>
-
-
-
-
-
-
-
 
       <!-- echo " lien de retour a la page precedente  -->
        <br>
-        <a class="retour_lien" href="../formulaire.html">Retourner a la page d'accueil</a>
-    ?>    
+        <a class="retour_lien" href="formulaire.html">Retourner au formulaire</a>
+       
     
 </body>
 </html>"

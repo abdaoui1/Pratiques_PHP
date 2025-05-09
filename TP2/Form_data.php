@@ -5,6 +5,7 @@
                 private $password ;
                 private $profession;
                 private $paye ;
+                private $ville ;
                 private $sexe ;
                 private $langues ;
                 private $loisirs ;
@@ -12,13 +13,14 @@
                 private $cv_taille ;
                 private $cv_location ;
                 // Constructor
-                public function __construct($nom,$prenom,$password,$profession,$paye,$sexe,$langues,$loisirs,$cv_nom,$cv_taille,$cv_location)
+                public function __construct($nom,$prenom,$password,$profession,$paye,$ville,$sexe,$langues,$loisirs,$cv_nom,$cv_taille,$cv_location)
                 {
                     $this->nom          = $nom;
                     $this->prenom       = $prenom;
                     $this->password     = $password;
                     $this->profession   = $profession;
                     $this->paye         = $paye;
+                    $this->ville        = $ville;
                     $this->sexe         = $sexe;
                     $this->langues      = $langues;
                     $this->loisirs      = $loisirs;
@@ -31,7 +33,7 @@
                 public function __toString()
                 {
                     return "Form_data [nom=". $this->nom ." | prenom=" .$this->prenom . " | password=" .$this->password . " | profession="
-                    .$this->profession." | paye=" . $this->paye . " | sexe=" . $this->sexe ." | langues=". implode(' ,' , $this->langues )
+                    .$this->profession." | paye=" . $this->paye . " | ville=" .$this->ville . " | sexe=" . $this->sexe ." | langues=". implode(' ,' , $this->langues )
                     ." | loisirs=" .implode(' ,' , $this->loisirs ) ." | cv_nom=".$this->cv_nom . " | cv_taille=" .$this->cv_taille. " | cv_location=" .$this->cv_location ."]";
     
                 }
@@ -65,6 +67,12 @@
                 }
                 public function setPaye ($paye) {
                     $this->paye = $paye;
+                }
+                public function getVille() {
+                    return $this->ville;
+                }
+                public function setVille ($ville) {
+                    $this->ville = $ville;
                 }
                 public function getSexe() {
                     return $this->sexe;

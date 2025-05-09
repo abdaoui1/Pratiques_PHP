@@ -14,15 +14,13 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   /> -->
 
-  <link rel="stylesheet" href="Style/animate.css">
-  <link rel="stylesheet" href="Style/bootstrap.css">
-  <link rel="stylesheet" href="Style/styles.css">
     <style>
 
 table {
     /* background-color: rgb(143, 143, 134); */
     border-collapse: collapse;
     border: 1px solid black;
+    margin: 20%;
   
 
 }
