@@ -16,10 +16,13 @@
 
     <style>
 
+        
+
 table {
     /* background-color: rgb(143, 143, 134); */
     border-collapse: collapse;
     border: 1px solid black;
+    margin: auto;
   
 
 }
@@ -34,6 +37,10 @@ table {
     }
     th {
         background-color: greenyellow;
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+        padding : 10px;
     }
 
 td {
@@ -177,7 +184,7 @@ td {
 
      
     ?>
-<form method="post">
+<form method="post" >
     
 <!-- // bootstrap class -->
         <div class="d-flex justify-content-cenetr"> 

@@ -34,7 +34,7 @@ function handleChangeCountry(selectedCountry) {
 
     // Empty 
     let elementSelect = document.getElementById('ville');
-    elementSelect.innerHTML = '';
+    elementSelect.innerHTML = '<option value="autre" > autre -- </option>';
 
 
     let countruAndCityObject = countrysAndCitys.find(c =>

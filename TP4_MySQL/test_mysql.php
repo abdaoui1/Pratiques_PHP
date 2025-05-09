@@ -25,18 +25,17 @@
         // { echo '<h1> Echc de la connexion </h1>'.mysqli_connect_error();     }
         // else {echo '<h1> connection reussiee </h1>';}
         
+
         // __________________ Methode 2 : mysqli class -----------------------------
 
-
+        $mysqli = new mysqli($url , $user , $pwd , $db);
         
-        // $mysqli = new mysqli($url , $user , $pwd , $db);
-        
-        // if ( $mysqli->connect_error )
-        // {
-        //     echo '<h1>Error de connction </h1>'.$mysqli->connect_error ;
+        if ( $mysqli->connect_error )
+        {
+            echo '<h1>Error de connction </h1>'.$mysqli->connect_error ;
 
-        // }
-        // else echo "connxtion reussie . ";
+        }
+        else echo "connxtion reussie . ";
     
     
 

@@ -37,6 +37,7 @@
       background-color: black;
       text-align: center;
       font-weight: bolder;
+      padding: 10px 3px;
       color: white;
     }
 
@@ -65,14 +66,14 @@
     div.comment {
       border-radius: 4px;
       position: relative;
-      padding: 4px;
+      padding: 15px;
       margin: 10px;
     }
 
     span.ville {
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 15px;
+      right: 10px;
       margin: 5px;
     }
 
@@ -92,6 +93,21 @@
     button:hover {
       background-color: #2980b9;
     }
+
+     @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+            td {
+                display: block;
+                width: 100%;
+            }
+            .ville {
+                position: static;
+                display: block;
+                margin-top: 10px;
+            }
+        }
   </style>
 </head>
 <body class="first-color">
@@ -120,7 +136,7 @@
             <tr>
                 <td>Pays</td>
                 <td>
-                    <select name="pays" id="pays">
+                    <select name="pays" id="pays" onchange="handleChangeCountry(this)">
                         <!-- Added by a scripts ( JS) -->
                          <option value="" disabled selected>-- Choisissez un pays --</option>
                     </select>
@@ -143,7 +159,7 @@
                 <td>Joindre un fichier (optionnel) <br>( en .pdf , 4Mo en max):</td>
                 <td>
                     <label for="file">Choisir un fichier</label>
-                    <input type="file" name="file">
+                    <input type="file" name="file" accept=".pdf">
                 </td>
             </tr>
             <tr>
