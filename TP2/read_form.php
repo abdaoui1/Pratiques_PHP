@@ -20,7 +20,7 @@ table {
     /* background-color: rgb(143, 143, 134); */
     border-collapse: collapse;
     border: 1px solid black;
-    margin: 20%;
+    margin: 10%;
   
 
 }

@@ -15,39 +15,91 @@
     <title>Affiche Parametres</title>
 
     <style>
-        body {
-            
-            font-family:'Times New Roman', Times, serif ;
-        }
-        table {
-            
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            border: 1px solid orange;
-        }
-        td {
-            font-size: 24px;
-            padding: 5px;
-            font-weight: bold;
-        }
+ 
+    
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-        tr:nth-child(odd) {
-            background-color: lavenderblush;
-        }
+form {
+    width: 100%;
+    max-width: 960px;
+}
 
-        a {
-            border-radius: 5px;
-            background-color: skyblue;
-            margin: 20px;
-            padding: 5px;
-            font-size: 20px;
+table {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
 
-            
-        }
+td {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    vertical-align: top;
+}
 
-        table , a {
-            margin-left: 20%;
-        }
+input[type="text"],
+input[type="file"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffffcc;
+    color: #333;
+    font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+label {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px 24px;
+    margin-top: 10px;
+    margin-right: 12px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+select[multiple] {
+    height: 100px;
+}
+
+::placeholder {
+    color: #aaa;
+}
+
+
     </style>
 </head>
 <body>

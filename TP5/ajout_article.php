@@ -181,10 +181,10 @@ span.quantity {
     <a href="ajout_article.php?reset=1">Vider le Panier</a>
     <h1>Total : <?php 
         $total = 0;
-            $total = $_SESSION['panier']['SAMSUNG_GALAXY_S9__7000DH'] * 7000 ;
-            $total += $_SESSION['panier']['HUAWEI_P30__9000DH'] * 9000;
-            $total += $_SESSION['panier']['Apple_iPhone_9__10000DH'] * 10000;
+           foreach( $_SESSION['panier'] as $key => $item ) 
+            $total += $item * extractMontant( $key ) ;
         echo $total." DH";
+           
         ?></h1>
     <table>
         <tr>
@@ -211,5 +211,30 @@ span.quantity {
     </table>
 
 
+
 </body>
 </html>
+
+<?php
+      // A simple function for extracting the price
+
+    $str = "SAMSUNG_GALAXY_S9__7000DH";
+
+    $montant = null;
+
+    // sub
+    function extractMontant($str) {
+    
+        $dhPos = strpos($str,"DH");
+        $i = $dhPos;
+
+        do  {
+            $i--;
+        }   while ( substr($str, $i,1) != "_");
+
+        $str = substr($str,$i+1 ,  $dhPos-$i-1);
+        return  $str;
+    }
+
+    // extractMontant("HUAWEI_P30__9000DH"); //test
+    ?>  

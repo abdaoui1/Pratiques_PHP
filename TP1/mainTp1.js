@@ -44,9 +44,7 @@ const jobsList = [
 
 // Fetch data from the countrier+cities.json file 
 
-
 let countrysAndCitys = [];
-
 
 async function getData() {
     const fetchedData = await fetch('countries+cities.json');
@@ -68,8 +66,6 @@ async function getData() {
         // adding this element to the document
         document.getElementById('pays').appendChild(optionElmCountry);
     }
-
-
 };
 
 

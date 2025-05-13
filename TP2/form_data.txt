@@ -4,3 +4,6 @@ Form_data [nom=Taki | prenom=jaouad | password=1234 | profession=Coiffeur | paye
 Form_data [nom=Taki | prenom=jaouad | password=45 | profession=Coiffeur | paye=Albania | ville=Bajram Curri | sexe=Masculin | langues=Arabe | loisirs=Sport | cv_nom=uploadedCV_2025_May_Thu__23-55-24.pdf | cv_taille=574Ko | cv_location=C:\wamp64\www\TPS\TP2\tp2_CVs\uploadedCV_2025_May_Thu__23-55-24.pdf]
 
 
+Form_data [nom=Abdaoui | prenom=abdessamad | password=21334fadfasdfafdasdfa | profession=Enseignant | paye=Morocco | ville=Settat | sexe=Masculin | langues=Francais ,Arabe ,Anglais | loisirs=Sport | cv_nom=uploadedCV_2025_May_Sat__22-17-07.pdf | cv_taille=223Ko | cv_location=C:\wamp64\www\TPS\TP2\tp2_CVs\uploadedCV_2025_May_Sat__22-17-07.pdf]
+
+
